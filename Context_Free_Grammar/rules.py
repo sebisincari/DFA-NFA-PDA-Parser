@@ -11,12 +11,19 @@ def rule(vec):
     return d
 
 def generator(str,reguli):
-    noVar=False
-    print(reguli)
-    while not noVar:
+    var=True
+    print(str)
+    while var:
+        var = False
         lenn = len(str)
         newStr = ""
         for i in range(0,lenn):
             if str[i] in reguli:
+                #print("aici")
+                var=True
                 rnd = random.randint(0,len(reguli[str[i]])-1)
-                newStr += reguli[str[i]][0]
+                newStr += str[0:i]
+                newStr += reguli[str[i]][rnd]
+                newStr += str[i+1:]
+        print(newStr)
+        str = newStr
