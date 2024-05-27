@@ -48,6 +48,7 @@ def dfaEmulator(str,d,fct):
     while index<lenght:
         t = (state,str[index])
         state = fct[t]
+        #print(state,end=" ")
         index += 1
         
     if state in d["Finals"]:

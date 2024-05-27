@@ -1,58 +1,44 @@
 [Sigma]
-w 
-a
-s 
-d 
+l
+u
+r
+d
 [States]
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+R1 s
+R2
+R3
+R4
+R5
+R6
+R7
 [Finals]
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+R7
 [Delta]
-0 d 1
-1 a 0
-1 d 2
-2 a 1
-2 s 3
-3 w 2
-2 w 4
-4 s 2
-2 d 5
-5 a 2
-5 d 6
-6 a 5
-6 d 7
-7 a 6
-7 d 8
-8 a 7
-8 d 9
-9 a 8
-9 d 10
-10 a 9
-10 w 11
-11 s 10
-10 s 12
-12 w 10
+R1 l R1
+R1 u R1
+R1 r R2
+R1 d R1
+R2 l R1
+R2 u R4
+R2 r R3
+R2 d R2
+R3 l R2
+R3 u R3
+R3 r R3
+R3 d R3
+R4 l R4
+R4 u R4
+R4 r R4
+R4 d R5
+R5 l R6
+R5 u R4
+R5 r R7
+R5 d R5
+R6 l R6
+R6 u R6
+R6 r R5
+R6 d R6
+R7 l R7
+R7 u R7
+R7 r R7
+R7 d R7
