@@ -36,14 +36,14 @@ Automatul Finit Determinist (Deterministic Finite Automaton) este un model de ca
 
 Acest DFA recunoaște limbajul binar ce se termină în '1':
 ```
-Stări: {q0, q1}<br/>
-Stare inițială: q0<br/>
-Stări acceptante: {q1}<br/>
-Tranziții:<br/>
-q0 → 0 → q0<br/>
-q0 → 1 → q1<br/>
-q1 → 0 → q0<br/>
-q1 → 1 → q1<br/>
+Stări: {q0, q1}
+Stare inițială: q0
+Stări acceptante: {q1}
+Tranziții:
+q0 → 0 → q0
+q0 → 1 → q1
+q1 → 0 → q0
+q1 → 1 → q1
 ```
 ### Automatul cu Stivă (PDA)
 
@@ -60,15 +60,15 @@ Automatul cu Stivă (Pushdown Automaton) extinde DFA prin utilizarea unei stive,
 
 Acest PDA recunoaște limbajul `L = {a^n b^n | n ≥ 0}`:
 ```
-Stări: {q0, q1, q2}<br/>
-Stare inițială: q0<br/>
-Stări acceptante: q2<br/>
+Stări: {q0, q1, q2}
+Stare inițială: q0
+Stări acceptante: q2
 Tranziții:<br/>
-(q0, a, Z) → (q0, aZ)<br/>
-(q0, a, a) → (q0, aa)<br/>
-(q0, b, a) → (q1, $)<br/>
-(q1, b, a) → (q1, $)<br/>
-(q1, $, Z) → (q2, $)<br/>
+(q0, a, Z) → (q0, aZ)
+(q0, a, a) → (q0, aa)
+(q0, b, a) → (q1, $)
+(q1, b, a) → (q1, $)
+(q1, $, Z) → (q2, $)
 ```
 ## Utilizarea Hash-urilor
 
